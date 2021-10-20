@@ -1,0 +1,206 @@
+
+
+<!DOCTYPE html>
+<html lang="en" class="text-100">
+<head>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+
+    <!-- ############################# INFORMATION #############################
+
+### VALIDATION ###
+This page and corresponding CSS have been checked on the W3c HTML5 and CSS3 
+validator and have passed I chose not to include the badge purely for stylistic 
+reasons.
+
+### ACKNOWLEDGEMENTS ###
+
+This site uses fontawesome (https://fontawesome.com) for icons
+
+     ####################################################################### -->
+
+    <title>Barry's Bargain Books :: Privacy Policy</title>
+    <meta name="description" content="Barry's Bargain Books: Discover your next favourite book from our list of fantastic books to read!">
+    <meta name="keywords" content="books, buy books, books online, paperback books, favourite book, reading, discounted, cheap">
+    <meta name="author" content="Barry O'Connor">
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/boc.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
+</head>
+<body>
+<body>
+    <!-- screenreader / keyboard link displayed offscreen to allow skipping the menu and accessing main content -->
+    <a class="skip-main" href="#main">Skip to main content</a>
+
+    <!-- cookie bar to allow for GDPR compliance -->
+    <div id="cookiebar"><p>This website uses cookies</p>
+        <button type="button" onclick="viewCookieInfo();" onkeypress="viewCookieInfo();">Read More</button>
+        <button type="button" onclick="acceptCookies();" onkeypress="acceptCookies();">Accept Cookies</button>
+    </div>
+
+    <!-- main header for the site -->
+    <header class="boc-lblue-bg">
+        <div class="boc-grid-container boc-header-cols">
+            <div>
+                <!-- Logo with link to home page -->
+                <a href="index.html" title="retrun to the home page"><img src="images/logo.png" alt="Logo for Barry's Bargain Books" /></a>
+            </div>
+            <div>
+                <!-- Text size functionality to allow visually impaired users to increase text size up to 200% -->
+                <a href="#" class="text-100" onclick="changeFontSize(100);" onkeypress="changeFontSize(100);" title="set page text size to 100%">A</a>
+                <a href="#" class="text-150" onclick="changeFontSize(150);" onkeypress="changeFontSize(150);" title="set page text size to 150%">A</a>
+                <a href="#" class="text-200" onclick="changeFontSize(200);" onkeypress="changeFontSize(200);" title="set page text size to 200%">A</a>
+                
+                <!-- search form -->
+                <form id="search-form" action="search.html">
+                    <input type="search" id="search-field" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <span id="search-field-msg"></span>
+                </form>
+            </div>
+            <div id="header-buttons">
+                <!-- Buttons to access Shopping Basket and Account -->
+                <button type="button" onclick="openAccount();" onkeypress="openAccount();"><i class="fas fa-user"></i>Account</button>
+                <button type="button" onclick="openBasket();" onkeypress="openBasket();"><i class="fas fa-shopping-cart"></i>Basket</button>
+            </div>  
+        </div>
+    </header>
+
+
+
+    <nav id="main-menu" class="boc-black-bg">
+        <!-- menu on tablets and screens -->
+        <ul class="boc-grid-container boc-hide-mobile">
+            <li><a href="index.html"><span><i class="fas fa-home" aria-hidden="true"></i>Home</span></a></li>
+            <li><a href="coming-soon.html"><span><i class="far fa-book" aria-hidden="true"></i>Coming Soon</span></a></li>
+            <li><a href="genres.html"><span><i class="fas fa-book-reader" aria-hidden="true"></i>Genres</span></a></li>
+            <li><a href="authors.html"><span><i class="far fa-id-badge" aria-hidden="true"></i>Authors</span></a></li>
+            <li><a href="special-offers.html"><span><i class="fas fa-tags" aria-hidden="true"></i>Special Offers</span></a></li>
+            <li><a href="report.html"><span><i class="far fa-file-code" aria-hidden="true"></i>Report</span></a></li>
+        </ul>
+
+        <!-- menu for mobiles -->
+        <a class="boc-menu-button boc-show-inline-mobile" href="javascript:void(0);" onclick="toggleMenu()" onkeypress="toggleMenu()" title="Toggle Navigation Menu"><span class="fa fa-bars"></span></a>
+        <a class="boc-account boc-show-inline-mobile" href="basket.html"><i class="fas fa-shopping-cart"></i>Basket</a>
+        <a class="boc-account boc-show-inline-mobile" href="account.html""><i class="fas fa-user"></i>Account</a>
+        <ul id="dropdown-nav" class="boc-black-bg boc-grid-container boc-hide">
+            <li><a href="index.html"><span><i class="fas fa-home" aria-hidden="true"></i>Home</span></a></li>
+            <li><a href="coming-soon.html"><span><i class="far fa-book" aria-hidden="true"></i>Coming Soon</span></a></li>
+            <li><a href="genres.html"><span><i class="fas fa-book-reader" aria-hidden="true"></i>Genres</span></a></li>
+            <li><a href="authors.html"><span><i class="far fa-id-badge" aria-hidden="true"></i>Authors</span></a></li>
+            <li><a href="special-offers.html"><span><i class="fas fa-tags" aria-hidden="true"></i>Special Offers</span></a></li>
+            <li><a href="report.html"><span><i class="far fa-file-code" aria-hidden="true"></i>Report</span></a></li>
+        </ul>
+    </nav>
+
+
+
+
+    <main id="main">
+        <section id="plain-text" class="boc-white-bg">
+            
+            <h1 class="boc-mblue-bg boc-pad-1 boc-center">Privacy Policy</h1>
+            <div id="breadcrumb" class="boc-lgrey-bg">
+                <div class="boc-grid-container">
+                    <a href="index.html" title="retrun to the home page">Home</a>
+                    <span class="separator">></span>
+                    <span class="current">Privacy Policy</span>
+                </div>
+            </div>
+            <div class="boc-grid-container boc-pad-2">
+                <p>Barry's Bargain Books are committed to preserving the privacy of our clients and website visitors. Please read the following privacy policy which explains how we use and protect the information that you provide.</p>
+                <p><strong>Last updated: 25 May 2018</strong></p>
+                <h2>Data we collect from you</h2>
+                <p>Barry's Bargain Books collects data about you:</p>
+                <ul>
+                <li>when you request services or otherwise provide us with your personal details (such as your name, contact details, e-mail address etc.); and</li>
+                <li>from your usage of the website and any other information you post on the website, e-mail or otherwise sent to us. By subscribing through the website you consent to the collection, storage, use and transfer of your data by us in accordance with the terms of this privacy policy.</li>
+                </ul>
+                <h2>Subscribing</h2>
+                <p>You can subscribe on this website to receive information from us, including general updates, products, services or news. You can unsubscribe at any time by clicking on the “click here to unsubscribe” link provided in our emails or <a href="contact-us.html">contacting us</a> by telephone or email.</p>
+                <h2>Use of Data</h2>
+                <p>We will only use your data:</p>
+                <ul>
+                <li>to supply you with the products, services and information which you have requested including advising you of any security updates by way of newsletters, events and seminars; and</li>
+                <li>to help improve our services generally.</li>
+                </ul>
+                <p>We may contact you by post or telephone as well as by e-mail. If you change your mind about being contacted in the future by any of these means then <a href="contact-us.html">please let us know</a>.</p>
+                <h2>Security</h2>
+                <p>All information you provide to us is stored on secure servers with industry standard anti-virus and firewall protection in place.</p>
+                <p>Unfortunately, the transmission of information via the internet is not completely secure.  Although we will do our best to protect your personal data, we cannot guarantee the security of your data transmitted online or through the website. Any transmission is at your own risk. Once we have received your information, we use strict procedures and security features to try to prevent unauthorised access.</p>
+                <h2>Disclosure of data</h2>
+                <p>We process all data in accordance with the EU General Data Protection Regulation. We may disclose your data to other third parties who act for us in order to provide the information you have requested. Unless required to do so by law, we will not otherwise share, sell or distribute any of the data you provide to us without your consent.</p>
+                <h2 id="cookies">Cookies</h2>
+                <p>A “cookie” is a piece of software that attaches to the hard drive of your computer and remembers information about the configuration of your computer. We use cookies to track visitors’ movements through the website, store customer preferences and to store information necessary for the smooth running of a shopping cart on a website. You can manage your browser settings to allow sites to save and read cookie data.</p>
+                <p>A “cookie” is a piece of software that attaches to the hard drive of your computer and remembers information about the configuration of your computer. We use cookies to track visitors’ movements through the website. You can manage your browser settings to allow sites to save and read cookie data.</p>
+                <h2>Your rights</h2>
+                <p>You have the right to ask for a copy of the data held by us in our records. You also have the right to require us to correct any inaccuracies in your data or delete your data.</p>
+                <h2>Consent</h2>
+                <p>So far as receipt of any updates by way of newsletters etc, you can withdraw your consent at any time. Please <a href="/contact/">contact us</a> to inform us of your wish to withdraw consent.</p>
+                <h2>Changes</h2>
+                <p>We may make changes to this policy from time to time and any changes will be posted on this page.</p>
+                <h2>Contact us</h2>
+                <p>If you have any queries or concerns regarding the use of your data or this policy then please contact Barry's Bargain Books on 0123456789. We will make all efforts to deal with any requests or concerns as speedily as possible.</p>
+                <p>If we are unable to resolve any issue to your satisfaction, you have the right to complain to the Information Commissioner’s Office. Contact information can be found at <a href="https://ico.org.uk/global/contact-us/" target="_blank" rel="noopener">https://ico.org.uk/global/contact-us/</a></p>
+            </div>
+        </section>
+        <section class="boc-dblue-bg">
+            <div class="boc-grid-container">
+                <h3>About Us</h3>
+                <p>We love books! Ever since opening the shop, we have strived to fulfill one single aim: to help each and every customer find their new favourite book. That's a huge claim but we feel that if the process is simple enough and you are given advice when you need it, this will help in making sure you love the books you buy.</p>
+                <p>Established in 2000, we have sold millions of books, from worldwide bestsellers to local interest history books. We operate online and in your local highstreet where our friendly staff will be more than happy to have a friendly chat about what type of book you like and suggest books you may like. Every one of our staff love books as much as you do, we encourage them to read new books so that they can pass on their own personal experience directly to you.</p>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer class="boc-black-bg">
+        
+        <!-- Bottom bar navigation -->
+        <nav class="boc-grid-container boc-3-cols">
+            <div>
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                </ul>     
+            </div>
+            <div>
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="returns.html">Returns</a></li>
+                    <li><a href="delivery.html">Delivery</a></li>
+                    <li><a href="complaints.html">Complaints</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Account</h4>
+                <ul>
+                    <li><a href="account.html">My Account</a></li>
+                    <li><a href="order-history.html">Order History</a></li>
+                    <li><a href="wishlist.html">Wishlist</a></li>
+                </ul>  
+            </div>
+        </nav>
+    
+
+        <div class="boc-white-bg boc-center">
+            <!-- Footer bar with copyright -->
+            Copyright &copy; 2020 Barry's Bargain Books
+        </div>
+
+    </footer>
+<script type="text/javascript" src="javascript/sitewide.js"></script>
+</body>
+</html>

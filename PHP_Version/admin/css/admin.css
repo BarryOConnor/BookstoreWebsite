@@ -1,0 +1,1091 @@
+@charset "UTF-8";
+/* ----------------------------------------
+               Fonts
+---------------------------------------- */
+@font-face {
+  font-family: "Droid Sans";
+  src: url("../../webfonts/DroidSans-webfont.eot");
+  src: url("../../webfonts/DroidSans-webfont.eot?#iefix") format("embedded-opentype"), url("../../webfonts/DroidSans-webfont.woff") format("woff"), url("../../webfonts/DroidSans-webfont.ttf") format("truetype"), url("../../webfonts/DroidSans-webfont.svg#droid_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Ubuntu Condensed";
+  src: url("../../webfonts/UbuntuCondensed-Regular.eot");
+  src: url("../../webfonts/UbuntuCondensed-Regular.eot?#iefix") format("embedded-opentype"), url("../../webfonts/UbuntuCondensed-Regular.woff") format("woff"), url("../../webfonts/UbuntuCondensed-Regular.ttf") format("truetype"), url("../../webfonts/UbuntuCondensed-Regular.svg#UbuntuCondensed-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* ----------------------------------------
+               Variables
+---------------------------------------- */
+/*blue*/
+/*teal*/
+/*green*/
+/*green*/
+/*dblue*/
+/*purple*/
+/*fuchsia*/
+/*orange*/
+/*mustard*/
+/*grey*/
+/*red*/
+/* ----------------------------------------
+               Basic Markup
+---------------------------------------- */
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+
+/*everything uses border-box */
+html {
+  font-size: 100%;
+  padding: 0rem;
+  margin: 0rem;
+  height: 100%;
+  width: 100%;
+}
+
+html.text-100 {
+  font-size: 1rem;
+}
+
+html.text-150 {
+  font-size: 1.5rem;
+}
+
+html.text-200 {
+  font-size: 2rem;
+}
+
+body {
+  font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  font-weight: 400;
+  padding: 0rem;
+  margin: 0rem;
+  height: 100%;
+  width: 100%;
+  background-color: #f3f2f1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ----------------------------------------
+               Typography Markup
+---------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-weight: 400;
+  margin: 0.625rem 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: 1.875rem;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.35;
+}
+
+h4 {
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+body {
+  font-size: 0.9375rem !important;
+}
+
+body {
+  color: #e7e7e7;
+  background-color: #212121;
+}
+
+input, select, textarea {
+  font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin: 0.625rem 0;
+  text-align: center;
+  font-size: 1rem;
+  text-align: left;
+}
+
+input, select, textarea {
+  font-size: 1rem;
+  text-align: left;
+}
+
+@media (min-width: 50rem) and (max-width: 75rem) {
+  /* HTML setup*/
+  h1 {
+    font-size: 2.25rem;
+    line-height: 1.25;
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 1.875rem;
+    line-height: 1.3;
+    text-align: left;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.35;
+    text-align: left;
+  }
+
+  h4 {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  body, input, select, textarea {
+    font-size: 0.9375rem !important;
+  }
+}
+@media (min-width: 75.06rem) {
+  h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+    line-height: 1.25;
+    text-align: left;
+  }
+
+  h3 {
+    font-size: 1.875rem;
+    line-height: 1.3;
+    text-align: left;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    line-height: 1.35;
+    text-align: left;
+  }
+
+  body, input, select, textarea {
+    font-size: 1rem !important;
+    text-align: left;
+  }
+}
+a.skip-main {
+  left: -999px;
+  position: absolute;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -999;
+}
+
+a {
+  border: 0.125rem solid transparent;
+  color: #36c0f4;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #36c0f4 !important;
+}
+
+/* remove default outline and shows a red box around focused elements. Needed for keyboard navigation*/
+body.using-keyboard a:focus, body.using-keyboard input:focus, body.using-keyboard select:focus, body.using-keyboard textarea:focus, body.using-keyboard button:focus {
+  border: 0.125rem dotted #ff0000 !important;
+  outline: 0;
+  color: #222;
+}
+
+body.using-keyboard a:focus {
+  color: #f46036;
+}
+
+/* responsive code for fit-to-width images */
+hr {
+  border: 0.0625rem solid #0078D4;
+  width: 90%;
+}
+
+main.login {
+  display: block;
+  padding: 30px 10px 10px 10px;
+  max-width: 320px;
+  max-height: 360px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  background-color: #474747;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* visibility */
+.boc-hide {
+  display: none !important;
+}
+
+.boc-toggle {
+  display: block !important;
+}
+
+.boc-show {
+  display: grid !important;
+}
+
+.boc-hide-mobile {
+  display: none !important;
+}
+
+.boc-show-mobile {
+  display: block !important;
+}
+
+.boc-show-inline-mobile {
+  display: inline-block !important;
+}
+
+@media (min-width: 37.5rem) {
+  .boc-hide-mobile {
+    display: block !important;
+  }
+
+  .boc-show-mobile {
+    display: none !important;
+  }
+
+  .boc-show-inline-mobile {
+    display: none !important;
+  }
+}
+header {
+  background-color: #474747;
+  text-align: center;
+}
+
+i.green {
+  color: #0f0;
+}
+
+i.red {
+  color: #f00;
+}
+
+/* ----------------------------------------
+              Grid Markup
+---------------------------------------- 
+
+*/
+.boc-grid-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.625rem;
+}
+
+.boc-grid-gap {
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+}
+
+.boc-grid-gap-tiny {
+  grid-gap: 0.0625rem 0.0625rem;
+}
+
+.boc-2-cols, .boc-3-cols, .boc-4-cols, .boc-6-cols, .boc-header-cols, .boc-1-3-cols, .boc-1-2-1-cols {
+  display: block;
+}
+
+.boc-3-1-cols {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.boc-center {
+  text-align: center;
+}
+
+.boc-center-vert {
+  align-items: center;
+}
+
+.boc-center-hori {
+  justify-items: center;
+}
+
+.boc-center-both {
+  align-items: center;
+  justify-items: center;
+}
+
+@media (min-width: 37.5rem) and (max-width: 50rem) {
+  .boc-3-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .boc-4-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .boc-2-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .boc-1-3-cols {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .boc-1-2-1-cols {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+}
+@media (min-width: 50rem) and (max-width: 75rem) {
+  .boc-grid-container {
+    width: 96%;
+  }
+
+  .boc-4-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+  }
+
+  .boc-2-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .boc-3-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .boc-1-3-cols {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .boc-1-2-1-cols {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+}
+@media (min-width: 75.06rem) {
+  .boc-grid-container {
+    max-width: 100rem;
+    width: 96%;
+  }
+
+  .boc-2-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .boc-3-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .boc-4-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+  }
+
+  .boc-1-3-cols {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .boc-1-2-1-cols {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+}
+/* ----------------------------------------
+              Menu Specific
+---------------------------------------- */
+#main-menu {
+  margin: 0rem;
+  padding: 0rem;
+  position: relative;
+  z-index: 1000;
+  background: #000;
+}
+
+#main-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#main-menu ul li {
+  display: inline-block;
+}
+
+#main-menu a {
+  padding: 0.3125rem 0.25rem 0rem 0.25rem;
+  width: auto;
+  display: inline-block;
+  color: #ffffff;
+  height: 2.1875rem;
+}
+
+@media (min-width: 50rem) {
+  #main-menu a {
+    padding: 0.3125rem 0.5rem 0rem 0.5rem;
+  }
+}
+#main-menu a i {
+  font-size: 0.875rem;
+  margin-right: 0.25rem;
+  top: -0.0625rem;
+  position: relative;
+  text-align: center;
+  transition: transform 0.8s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+@media (min-width: 50rem) {
+  #main-menu a i {
+    margin-right: 0.4375rem;
+  }
+}
+#main-menu a > span {
+  border-bottom: 0.3125rem solid transparent;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  transition: border-bottom 0.3s ease-in-out;
+}
+
+#main-menu ul li.active a, #main-menu a.active, #main-menu a:hover, #main-menu a:focus, #main-menu a.active:hover, #main-menu a.active:focus {
+  background-color: #ffffff;
+  color: #222;
+}
+
+#main-menu ul li.active a i, #main-menu a.active i, #main-menu a:hover i, #main-menu a:focus i {
+  transform: rotateY(360deg);
+  color: #005e87;
+}
+
+#main-menu a.boc-menu-button:hover > span, #main-menu a.active > span, #main-menu a.boc-menu-button:focus span, #main-menu a.boc-menu-button.active > span {
+  border-bottom: 0.3125rem solid transparent;
+}
+
+#main-menu ul li.active a span, #main-menu a.active span, #main-menu a:hover span, #main-menu .active a:hover span, #main-menu a:focus span, #main-menu .active a:focus > span {
+  border-bottom: 0.3125rem solid #F46036;
+}
+
+#main-menu #dropdown-nav {
+  z-index: 1000;
+  list-style-type: none;
+  padding: 0;
+}
+
+#main-menu #dropdown-nav li {
+  display: block;
+}
+
+#main-menu #dropdown-nav a {
+  display: block;
+  width: 100%;
+  height: 2.1875rem;
+  padding-top: 0.375rem;
+}
+
+#main-menu .boc-account {
+  float: right;
+}
+
+/* ----------------------------------------
+            Breadcrumb Specific
+---------------------------------------- */
+.breadcrumb {
+  background-color: #666;
+}
+
+#breadcrumb {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0rem 0.625rem 0 0.625rem;
+}
+
+.separator {
+  margin: 0 0.75rem;
+}
+
+/* ----------------------------------------
+            Paged Content Specific
+---------------------------------------- */
+#paged-list i {
+  font-size: 20px;
+}
+
+#paged-list .form-row.header {
+  background-color: #000;
+  border-radius: 10px 10px 0px 0px;
+  min-height: 30px;
+}
+
+#paged-list span.list_actions {
+  position: absolute;
+  left: 10px;
+}
+
+#paged-list .form-row {
+  width: 100%;
+  background-color: #555;
+  padding: 5px 10px;
+}
+
+#paged-list .form-row.rollover {
+  border-bottom: 1px solid #000;
+}
+
+#paged-list .form-row.rollover:hover {
+  background-color: #333;
+}
+
+#paged-list .form-row span.icon {
+  position: absolute;
+  display: inline-block;
+  top: 6px;
+}
+
+#paged-list .form-row span.list_delete {
+  left: 50px;
+}
+
+#paged-list .form-row span.list_edit {
+  left: 10px;
+}
+
+#paged-list .form-row span.list_name {
+  padding-left: 100px;
+}
+
+#paged-list .form-row span.list_name.right {
+  margin-left: -100px;
+}
+
+#paged-list .form-row.footer {
+  background-color: #000;
+  border-radius: 0px 0px 10px 10px;
+  text-align: center;
+  min-height: 30px;
+}
+
+#paged-list input, #paged-list select, #paged-list textarea {
+  width: 400px;
+}
+
+@media (max-width: 800px) {
+  #paged-list input, #paged-list select, #paged-list textarea {
+    width: 75%;
+  }
+}
+/* --------------------
+ Dropdown CSS
+ -------------------- */
+/* Style The Dropdown Button */
+.dropbtn {
+  background-color: transparent;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  color: #e7e7e7;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+@media (max-width: 550px) {
+  button.dropbtn {
+    padding: 0px;
+  }
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-calendar, .dropdown-user, .dropdown-settings {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  width: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.dropdown-calendar, .dropdown-user, .dropdown-settings {
+  background-color: #111;
+}
+
+.dropdown-settings {
+  right: 0;
+}
+
+/* Links inside the dropdown */
+.dropdown-calendar a, .dropdown-user a, .dropdown-settings a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.light .dropdown a {
+  color: #000;
+}
+
+.dark .dropdown a {
+  color: #e7e7e7;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-calendar a:hover, .dropdown-user a:hover, .dropdown-settings a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-calendar, .dropdown:hover .dropdown-user, .dropdown:hover .dropdown-settings {
+  display: block;
+}
+
+/* --------------------
+ Modal CSS
+ -------------------- */
+#js-modal-page {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-container {
+  width: 100%;
+  margin: 0px;
+}
+
+.modal {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .modal-container {
+    min-width: 100%;
+    margin: 0px;
+  }
+}
+.modal.is-open {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The Close Button */
+.modal-close {
+  position: absolute;
+  font-size: 32px;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  line-height: 32px !important;
+  text-align: left;
+  margin-top: 0px;
+  z-index: 999;
+  top: 6px;
+  right: 6px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+@media (max-width: 650px) {
+  .modal-size {
+    width: 98%;
+    margin: 0px;
+  }
+}
+@media (min-width: 800px) {
+  .modal-size {
+    width: 650px;
+    margin: 0px;
+  }
+}
+header {
+  background-color: #555;
+  border-radius: 5px 5px 0px 0px;
+  padding: 0px 10px;
+}
+
+dialog {
+  display: block;
+  border: 0;
+}
+
+/* removes scroll when modal is opened */
+.no-scroll {
+  overflow: hidden;
+}
+
+/* overlay covers everything */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.modal p {
+  padding: 10px;
+  max-width: 780px;
+}
+
+/* modal */
+div#image-modal-content, div#mobile-image-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  max-width: 650px;
+  padding: 10px;
+}
+
+div#image-modal-content img, div#mobile-image-content img {
+  max-width: 150px;
+  height: auto;
+  display: inline-block;
+}
+
+h2#image-modal-title, h2#mobile-image-title {
+  margin: 0;
+}
+
+.modal-close {
+  color: #e7e7e7;
+}
+
+.modal-container {
+  background-color: #212121;
+  color: #e7e7e7;
+  border-radius: 5px;
+  -webkit-animation: pop ease 0.5s 1 normal;
+  animation: pop ease 0.5s 1 normal;
+}
+
+img#selected-image, img#selected-image-two {
+  max-width: 150px;
+}
+
+@media (min-width: 800px) {
+  @-webkit-keyframes pop {
+    0% {
+      opacity: 0;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    }
+    100% {
+      opacity: 1;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      max-height: 100%;
+      width: 800px;
+    }
+  }
+  @keyframes pop {
+    0% {
+      opacity: 0;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    }
+    100% {
+      opacity: 1;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      max-height: 100%;
+      width: 800px;
+    }
+  }
+}
+@media (max-width: 800px) {
+  @-webkit-keyframes pop {
+    0% {
+      opacity: 0;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    }
+    100% {
+      opacity: 1;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      max-height: 100%;
+      width: 100%;
+    }
+  }
+  @keyframes pop {
+    0% {
+      opacity: 0;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    }
+    100% {
+      opacity: 1;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      max-height: 100%;
+      width: 100%;
+    }
+  }
+}
+/* --------------------
+Cookie Bar  CSS
+ -------------------- */
+div#cookiebar {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 1rem;
+}
+
+/* --------------------
+ Toast bar  CSS
+ -------------------- */
+#toast {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+}
+
+#toast {
+  background-color: #111;
+  color: #e7e7e7;
+}
+
+#toast.popup {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the toast in and out */
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+/* --------------------
+ Forms CSS
+ -------------------- */
+.form-row {
+  width: 100%;
+}
+
+.form-row * {
+  vertical-align: middle;
+}
+
+.form-row label, .form-row input, .form-row select, .form-row textarea {
+  display: inline-block;
+}
+
+.form-row label {
+  width: 150px;
+  padding-right: 10px;
+  text-align: right;
+}
+
+#login-form .form-row label {
+  width: 100px;
+  padding-right: 10px;
+  text-align: right;
+}
+
+.form-row image {
+  text-align: center;
+}
+
+.form-row.center {
+  text-align: center;
+}
+
+.form-row.logo {
+  background-image: url("../images/logo.png");
+  background-size: contain;
+  min-height: 68px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 5px 15px;
+}
+
+input, select, textarea {
+  background-color: #212121;
+  color: #e7e7e7;
+  border: 1px solid #777;
+}
+
+.modal-container input[type=text], .modal-container input[type=email] {
+  width: 70%;
+}
+
+@media (max-width: 800px) {
+  .form-row label {
+    width: 100%;
+    display: block;
+    text-align: left;
+  }
+
+  .modal-container input[type=text], .modal-container input[type=email] {
+    width: 100%;
+  }
+}
+.error {
+  border: 1px solid #f00;
+  background: #f008;
+  margin: 10px 0px;
+}
+
+.error p {
+  margin: 5px;
+}
+
+.error p i {
+  margin: 5px;
+}
+
+form span {
+  display: none;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+form .boc-invalid ~ span {
+  display: block;
+  position: relative;
+  padding-left: 1.2rem;
+  background-color: #f008;
+}
+
+form .boc-invalid ~ span::before, form span.boc-invalid::before {
+  content: "";
+  color: #FFF;
+  font-weight: bold;
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  padding-right: 6px;
+}
+
+.form-row fieldset label {
+  display: block;
+  width: 250PX;
+  float: left;
+}
+
+.form-row input[type=checkbox] {
+  padding: 0px;
+  width: auto !important;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+/*# sourceMappingURL=admin.css.map */

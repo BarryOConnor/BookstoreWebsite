@@ -1,0 +1,391 @@
+
+
+<!DOCTYPE html>
+<html lang="en" class="text-100">
+<head>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+
+    <!-- ############################# INFORMATION #############################
+
+### VALIDATION ###
+This page and corresponding CSS have been checked on the W3c HTML5 and CSS3 
+validator and have passed I chose not to include the badge purely for stylistic 
+reasons.
+
+### ACKNOWLEDGEMENTS ###
+
+- This site uses fontawesome (https://fontawesome.com) for icons
+- This page uses XML code and the getXMLContent function which are adapted from the XPath tutorials 
+  available on W3CSchools at https://www.w3schools.com/xml/xpath_examples.asp
+
+     ####################################################################### -->
+
+    <title>Barry's Bargain Books :: Authors</title>
+    <meta name="description" content="Barry's Bargain Books: Discover your next favourite book from our list of fantastic books to read!">
+    <meta name="keywords" content="books, buy books, books online, paperback books, favourite book, reading, discounted, cheap">
+    <meta name="author" content="Barry O'Connor">
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/boc.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
+</head>
+<body>
+    <!-- screenreader / keyboard link displayed offscreen to allow skipping the menu and accessing main content -->
+    <a class="skip-main" href="#main">Skip to main content</a>
+
+    <!-- cookie bar to allow for GDPR compliance -->
+    <div id="cookiebar"><p>This website uses cookies</p>
+        <button type="button" onclick="viewCookieInfo();" onkeypress="viewCookieInfo();">Read More</button>
+        <button type="button" onclick="acceptCookies();" onkeypress="acceptCookies();">Accept Cookies</button>
+    </div>
+
+    <!-- main header for the site -->
+    <header class="boc-lblue-bg">
+        <div class="boc-grid-container boc-header-cols">
+            <div>
+                <!-- Logo with link to home page -->
+                <a href="index.html" title="retrun to the home page"><img src="images/logo.png" alt="Logo for Barry's Bargain Books" /></a>
+            </div>
+            <div>
+                <!-- Text size functionality to allow visually impaired users to increase text size up to 200% -->
+                <a href="#" class="text-100" onclick="changeFontSize(100);" onkeypress="changeFontSize(100);" title="set page text size to 100%">A</a>
+                <a href="#" class="text-150" onclick="changeFontSize(150);" onkeypress="changeFontSize(150);" title="set page text size to 150%">A</a>
+                <a href="#" class="text-200" onclick="changeFontSize(200);" onkeypress="changeFontSize(200);" title="set page text size to 200%">A</a>
+                
+                <!-- search form -->
+                <form id="search-form" action="search.html">
+                    <input type="search" id="search-field" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <span id="search-field-msg"></span>
+                </form>
+            </div>
+            <div id="header-buttons">
+                <!-- Buttons to access Shopping Basket and Account -->
+                <button type="button" onclick="openAccount();" onkeypress="openAccount();"><i class="fas fa-user"></i>Account</button>
+                <button type="button" onclick="openBasket();" onkeypress="openBasket();"><i class="fas fa-shopping-cart"></i>Basket</button>
+            </div>  
+        </div>
+    </header>
+
+
+
+    <nav id="main-menu" class="boc-black-bg">
+        <!-- menu on tablets and screens -->
+        <ul class="boc-grid-container boc-hide-mobile">
+            <li><a href="index.html"><span><i class="fas fa-home" aria-hidden="true"></i>Home</span></a></li>
+            <li><a href="coming-soon.html"><span><i class="far fa-book" aria-hidden="true"></i>Coming Soon</span></a></li>
+            <li><a href="genres.html"><span><i class="fas fa-book-reader" aria-hidden="true"></i>Genres</span></a></li>
+            <li class="active"><a href="authors.html"><span><i class="far fa-id-badge" aria-hidden="true"></i>Authors</span></a></li>
+            <li><a href="special-offers.html"><span><i class="fas fa-tags" aria-hidden="true"></i>Special Offers</span></a></li>
+            <li><a href="report.html"><span><i class="far fa-file-code" aria-hidden="true"></i>Report</span></a></li>
+        </ul>
+
+        <!-- menu for mobiles -->
+        <a class="boc-menu-button boc-show-inline-mobile" href="javascript:void(0);" onclick="toggleMenu()" onkeypress="toggleMenu()" title="Toggle Navigation Menu"><span class="fa fa-bars"></span></a>
+        <a class="boc-account boc-show-inline-mobile" href="basket.html"><i class="fas fa-shopping-cart"></i>Basket</a>
+        <a class="boc-account boc-show-inline-mobile" href="account.html""><i class="fas fa-user"></i>Account</a>
+        <ul id="dropdown-nav" class="boc-black-bg boc-grid-container boc-hide">
+            <li><a href="index.html"><span><i class="fas fa-home" aria-hidden="true"></i>Home</span></a></li>
+            <li><a href="coming-soon.html"><span><i class="far fa-book" aria-hidden="true"></i>Coming Soon</span></a></li>
+            <li><a href="genres.html"><span><i class="fas fa-book-reader" aria-hidden="true"></i>Genres</span></a></li>
+            <li class="active"><a href="authors.html"><span><i class="far fa-id-badge" aria-hidden="true"></i>Authors</span></a></li>
+            <li><a href="special-offers.html"><span><i class="fas fa-tags" aria-hidden="true"></i>Special Offers</span></a></li>
+            <li><a href="report.html"><span><i class="far fa-file-code" aria-hidden="true"></i>Report</span></a></li>
+        </ul>
+    </nav>
+
+
+
+
+    <main id="main">
+        <section class="boc-white-bg">
+            
+            <h1 class="boc-mblue-bg boc-pad-1 boc-center">Authors</h1>
+            <div id="breadcrumb" class="boc-lgrey-bg">
+                <div class="boc-grid-container">
+                    <a href="index.html" title="retrun to the home page">Home</a>
+                    <span class="separator">></span>
+                    <span class="current">Authors</span>
+                </div>
+            </div>
+            
+            <div id="authors" class="boc-pad-2">
+                <article id="Fiona-Barton" class="boc-author-box boc-grid-container boc-grid-gap boc-1-3-cols">
+                    <div class="image-col">
+                        <img src="images/authors/fiona-barton.jpg" alt="Portrait of Fiona Barton">
+                    </div>
+                    <div class="content-col">
+                        <h2>Fiona Barton</h2>
+                        <p>Fiona Barton's debut, The Widow, was a Sunday Times and New York Times bestseller and has been published in 36 countries and optioned for television. Her second novel, The Child, was a Sunday Times bestseller. Born in Cambridge, Fiona currently lives in Sussex and south-west France.</p>
+                        
+                        <div id="fiona-barton-books"></div>
+                    </div>
+                </article>
+                <hr />
+                <article id="Mary-Berry" class="boc-author-box boc-grid-container boc-grid-gap boc-1-3-cols">
+                    <div class="image-col">
+                        <img src="images/authors/mary-berry.jpg" alt="Portrait of Mary Berry">
+                    </div>
+                    <div class="content-col">
+                        <h2>Mary Berry</h2>
+                        <p>Mary Berry is the nation's favourite baker and author of over 70 books, including the bestselling Classic Mary Berry, Mary Berry Cooks, Mary Berry's Absolute Favourites, Mary Berry Foolproof Cooking, Mary Berry's Baking Bible, and Mary Berry Everyday. She was the much-adored judge on the BBC's The Great British Bake Off and has been teaching people all over the world to cook for over four decades. Mary is judge on BBC series Britain's Best Home Cook and champions home cooking for all ages.</p>
+                        
+                        <div id="mary-berry-books"></div>
+                    </div>
+                </article>
+                <hr />
+                <article id="James-S-A-Corey" class="boc-author-box boc-grid-container boc-grid-gap boc-1-3-cols">
+                    <div class="image-col">
+                        <img src="images/authors/james-s-a-corey.jpg" alt="Portrait of James S. A. Corey">
+                    </div>
+                    <div class="content-col">
+                        <h2>James S. A. Corey</h2>
+                        <p>James S. A. Corey is the pen name of fantasy author Daniel Abraham, author of the critically acclaimed Long Price Quartet, and writer Ty Franck. They both live in Albuquerque, New Mexico.</p>
+                        
+                        <div id="james-s-a-corey-books"></div>
+                    </div>
+                </article>
+                <hr />
+                <article id="Jeffery-Deaver" class="boc-author-box boc-grid-container boc-grid-gap boc-1-3-cols">
+                    <div class="image-col">
+                        <img src="images/authors/jeffrey-deaver.jpg" alt="Portrait of Jeffery Deaver">
+                    </div>
+                    <div class="content-col">
+                        <h2>Jeffrey Deaver</h2>
+                        <p>Jeffery Deaver is the Number One bestselling author of over thirty novels, including the 2011 authorised James Bond thriller, CARTE BLANCHE, three collections of short stories and a non-fiction law book. A former journalist, attorney, and folksinger, he has received or been shortlisted for numerous awards around the world, including Novel of the Year from the International Thriller Writers Association for THE BODIES LEFT BEHIND, the Steel Dagger for Best Thriller from the British Crime Writers' Association, and the British Thumping Good Read Award. He was recently shortlisted for the ITV3 Crime Thriller Award for Best International Author</p>
+                        
+                        <div id="jeffery-deaver-books"></div>
+                    </div>
+                </article>
+                <hr />
+                <article id="David-Eddings" class="boc-author-box boc-grid-container boc-grid-gap boc-1-3-cols">
+                    <div class="image-col">
+                        <img src="images/authors/david-eddings.jpg" alt="Portrait of David Eddings">
+                    </div>
+                    <div class="content-col">
+                        <h2>David Eddings</h2>
+                        <p>David Eddings (1931-2009) published his first novel, High Hunt, in 1973, before turning to the field of fantasy with the Belgariad, soon followed by the Malloreon. Born in Spokane, Washington, and raised in the Puget Sound area north of Seattle, he received his Bachelor of Arts degree from Reed College in Portland, Oregon, in 1954, and a master of arts degree from the University of Washington in 1961. He served in the US Army, worked as a buyer for the Boeing Company, and was both a grocery clerk and a college English teacher. He lived in Nevada until his death, at the age of 77.</p>
+                        
+                        <div id="david-eddings-books"></div>
+                    </div>
+                </article>
+                <hr />
+                <article id="Yuval-Noah-Harari" class="boc-author-box boc-grid-container boc-grid-gap boc-1-3-cols">
+                    <div class="image-col">
+                        <img src="images/authors/yuval-noah-harari.jpg" alt="Portrait of Yuval Noah Harari">
+                    </div>
+                    <div class="content-col">
+                        <h2>Yuval Noah Harari</h2>
+                        <p>Prof. Yuval Noah Harari has a PhD in History from the University of Oxford and lectures at the Hebrew University of Jerusalem, specialising in world history. His books have been translated into 50+ languages, with 20+ million copies sold worldwide. 'Sapiens: A Brief History of Humankind' (2014) looked deep into our past, 'Homo Deus: A Brief History of Tomorrow' (2016) considered far-future scenarios, and '21 Lessons for the 21st Century' (2018) zoomed in on the biggest questions of the present moment.</p>
+                        
+                        <div id="yuval-noah-harari-books"></div>
+                    </div>
+                </article>
+                <hr />
+                <article id="Gary-Hedstrom" class="boc-author-box boc-grid-container boc-grid-gap boc-1-3-cols">
+                    <div class="image-col">
+                        <img src="images/authors/no-portrait-male.jpg" alt="Portrait of Gary Hedstrom">
+                    </div>
+                    <div class="content-col">
+                        <h2>Gary Hedstrom</h2>
+                        <p>This author has currently not supplied any information.</p>
+                        
+                        <div id="gary-hedstrom-books"></div>
+                    </div>
+                </article>
+                <hr />                
+                <article id="Judith-Kerr" class="boc-author-box boc-grid-container boc-grid-gap boc-1-3-cols">
+                    <div class="image-col">
+                        <img src="images/authors/judith-kerr.jpg" alt="Portrait of Judith Kerr">
+                    </div>
+                    <div class="content-col">
+                        <h2>Judith Kerr</h2>
+                        <p>Judith Kerr OBE was born in Berlin. Her family left Germany in 1933 to escape the rising Nazi party, and came to England. She studied at the Central School of Art and later worked as a scriptwriter for the BBC.</p>
+                        <p>Judith was awarded the Booktrust Lifetime Achievement Award in 2016, and in 2019 was named Illustrator of the Year at the British Book Awards. Judith died in May 2019 at the age of 95, and her stories continue to entertain and delight generations of children.</p>
+                        
+                        <div id="judith-kerr-books"></div>
+                    </div>
+                </article>
+                <hr />
+                <article id="Stephen-King" class="boc-author-box boc-grid-container boc-grid-gap boc-1-3-cols">
+                    <div class="image-col">
+                        <img src="images/authors/stephen-king.jpg" alt="Portrait of Stephen King">
+                    </div>
+                    <div class="content-col">
+                        <h2>Stephen King</h2>
+                        <p>Stephen King is the author of more than fifty books, all of them worldwide bestsellers. His first crime thriller featuring Bill Hodges, MR MERCEDES, won the Edgar Award for best novel and was shortlisted for the CWA Gold Dagger Award. Both MR MERCEDES and END OF WATCH received the Goodreads Choice Award for the Best Mystery and Thriller of 2014 and 2016 respectively.</p>
+                        
+                        <div id="stephen-king-books"></div>
+                    </div>
+                </article>
+                <hr />
+                <article id="Sophie-Kinsella" class="boc-author-box boc-grid-container boc-grid-gap boc-1-3-cols">
+                    <div class="image-col">
+                        <img src="images/authors/sophie-kinsella.jpg" alt="Portrait of Sophie Kinsella">
+                    </div>
+                    <div class="content-col">
+                        <h2>Sophie Kinsella</h2>
+                        <p>Sophie Kinsella is a writer and former financial journalist. She is the number one bestselling author of Can You Keep a Secret?, The Undomestic Goddess, Remember Me?, Twenties Girl, I've Got Your Number, Wedding Night, My Not So Perfect Life, Surprise Me, the hugely popular Shopaholic novels and the Young Adult novel Finding Audrey. She lives in the UK with her husband and family.</p>
+                        
+                        <div id="sophie-kinsella-books"></div>
+                    </div>
+                </article>
+                <hr />
+                <article id="Lucy-Lane" class="boc-author-box boc-grid-container boc-grid-gap boc-1-3-cols">
+                    <div class="image-col">
+                        <img src="images/authors/no-portrait-female.jpg" alt="Portrait of Lucy Lane">
+                    </div>
+                    <div class="content-col">
+                        <h2>Lucy Lane</h2>
+                        <p>This author has currently not supplied any information.</p>
+                        
+                        <div id="lucy-lane-books"></div>
+                    </div>
+                </article>
+                <hr />
+                <article id="Sophie-Personne" class="boc-author-box boc-grid-container boc-grid-gap boc-1-3-cols">
+                    <div class="image-col">
+                        <img src="images/authors/sophie-personne.jpg" alt="Portrait of Sophie Personne">
+                    </div>
+                    <div class="content-col">
+                        <h2>Sophie Personne</h2>
+                        <p>Sophie Personne is a Relationship Expert, helping people in her own unique way to discover the solutions to the problems they experience with others and themselves. She has coached singles, couples and groups, working on relationships of all kinds.</p>
+                        <p>Her life journey has encouraged her to write her first self-help book, drawing on her own experiences, training and tremendous success with her clients over the years.</p>
+                        
+                        <div id="sophie-personne-books"></div>
+                    </div>
+                </article>
+                <hr />
+                <article id="Steve-Richards" class="boc-author-box boc-grid-container boc-grid-gap boc-1-3-cols">
+                    <div class="image-col">
+                        <img src="images/authors/steve-richards.jpg" alt="Portrait of Steve Richards">
+                    </div>
+                    <div class="content-col">
+                        <h2>Steve Richards</h2>
+                        <p>Steve Richards loves political leaders; what makes them tick, and what makes them so unique. Having been a political correspondent for the BBC, then Political Editor for the New Statesman, Steve turned his hand to television to present more insight into the leaders who shape our country. His 2018 series for BBC Parliament, The Prime Ministers We Never Had, looked more closely at the runners-up of our country’s history; from Tony Benn to Neil Kinnock to Ed Milliband.</p>
+                        
+                        <div id="steve-richards-books"></div>
+                    </div>
+                </article>
+                <hr />
+                <article id="bob-ross" class="boc-author-box boc-grid-container boc-grid-gap boc-1-3-cols">
+                    <div class="image-col">
+                        <img src="images/authors/bob-ross.jpg" alt="Portrait of Bob Ross">
+                    </div>
+                    <div class="content-col">
+                        <h2>Bob Ross</h2>
+                        <p>Robert Norman Ross (October 29, 1942 – July 4, 1995) was an American painter, art instructor, and television host. He was the creator and host of The Joy of Painting, an instructional television program that aired from 1983 to 1994 on PBS in the United States, and also aired in Canada, Latin America, and Europe. Ross went from being a public television personality in the 1980s and 1990s to posthumously being an Internet celebrity in the 21st century, with his talent and kindness leading to major popularity with fans on YouTube, Twitch, and many other websites many years after his death.</p>
+                        
+                        <div id="bob-ross-books"></div>
+                    </div>
+                </article>
+                <hr />
+                <article id="Soren-Sveistrup" class="boc-author-box boc-grid-container boc-grid-gap boc-1-3-cols">
+                    <div class="image-col">
+                        <img src="images/authors/soren-sveistrup.jpg" alt="Portrait of S&#248;ren Sveistrup">
+                    </div>
+                    <div class="content-col">
+                        <h2>S&#248;ren Sveistrup</h2>
+                        <p>S&#248;ren Sveistrup is an internationally acclaimed scriptwriter of the Danish television phenomenon The Killing which won various international awards and sold in more than a hundred countries. More recently, Sveistrup wrote the screenplay for Jo Nesb&#248;'s The Snowman.</p>
+                        <p>Sveistrup obtained a Master in Literature and in History from the University of Copenhagen and studied at the Danish Film School. He has won countless prizes, including an Emmy for Nikolaj and Julie and a BAFTA for The Killing.</p>
+                        <div id="soren-sveistrup-books"></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="boc-dblue-bg">
+            <div class="boc-grid-container">
+                <h3>About Us</h3>
+                <p>We love books! Ever since opening the shop, we have strived to fulfill one single aim: to help each and every customer find their new favourite book. That's a huge claim but we feel that if the process is simple enough and you are given advice when you need it, this will help in making sure you love the books you buy.</p>
+                <p>Established in 2000, we have sold millions of books, from worldwide bestsellers to local interest history books. We operate online and in your local highstreet where our friendly staff will be more than happy to have a friendly chat about what type of book you like and suggest books you may like. Every one of our staff love books as much as you do, we encourage them to read new books so that they can pass on their own personal experience directly to you.</p>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer class="boc-black-bg">
+        
+        <!-- Bottom bar navigation -->
+        <nav class="boc-grid-container boc-3-cols">
+            <div>
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                </ul>     
+            </div>
+            <div>
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="returns.html">Returns</a></li>
+                    <li><a href="delivery.html">Delivery</a></li>
+                    <li><a href="complaints.html">Complaints</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Account</h4>
+                <ul>
+                    <li><a href="account.html">My Account</a></li>
+                    <li><a href="order-history.html">Order History</a></li>
+                    <li><a href="wishlist.html">Wishlist</a></li>
+                </ul>  
+            </div>
+        </nav>
+    
+
+        <div class="boc-white-bg boc-center">
+            <!-- Footer bar with copyright -->
+            Copyright &copy; 2020 Barry's Bargain Books
+        </div>
+
+    </footer>
+<script type="text/javascript" src="javascript/sitewide.js"></script>
+<script type="text/javascript">
+/* ----------------------------------------
+               XML manipulation code
+---------------------------------------- */
+
+/* accreditation
+following code snippet and the getXMLContent function are adapted from the XPath tutorials 
+available on W3CSchools at https://www.w3schools.com/xml/xpath_examples.asp
+*/
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        updateAuthorBooks(xhttp.responseXML);
+    }
+};
+xhttp.open("GET", "books.xml", true);
+xhttp.send(); 
+
+function updateAuthorBooks(xml){
+    showBookList(xml, "/bookstore/book[author='Fiona Barton']", "/bookstore/book[author='Fiona Barton']/descendant-or-self::*[self::title | self::urltitle | self::artwork ]", "fiona-barton-books", "Books by this Author");    
+    showBookList(xml, "/bookstore/book[author='Mary Berry']", "/bookstore/book[author='Mary Berry']/descendant-or-self::*[self::title | self::urltitle | self::artwork ]", "mary-berry-books", "Books by this Author");
+    showBookList(xml, "/bookstore/book[author='James S. A. Corey']", "/bookstore/book[author='James S. A. Corey']/descendant-or-self::*[self::title | self::urltitle | self::artwork ]", "james-s-a-corey-books", "Books by this Author");
+    showBookList(xml, "/bookstore/book[author='Jeffery Deaver']", "/bookstore/book[author='Jeffery Deaver']/descendant-or-self::*[self::title | self::urltitle | self::artwork ]", "jeffery-deaver-books", "Books by this Author");
+    showBookList(xml, "/bookstore/book[author='David Eddings']", "/bookstore/book[author='David Eddings']/descendant-or-self::*[self::title | self::urltitle | self::artwork ]", "david-eddings-books", "Books by this Author");
+    showBookList(xml, "/bookstore/book[author='Yuval Noah Harari']", "/bookstore/book[author='Yuval Noah Harari']/descendant-or-self::*[self::title | self::urltitle | self::artwork ]", "yuval-noah-harari-books", "Books by this Author");
+    showBookList(xml, "/bookstore/book[author='Gary Hedstrom']", "/bookstore/book[author='Gary Hedstrom']/descendant-or-self::*[self::title | self::urltitle | self::artwork ]", "gary-hedstrom-books", "Books by this Author");
+    showBookList(xml, "/bookstore/book[author='Judith Kerr']", "/bookstore/book[author='Judith Kerr']/descendant-or-self::*[self::title | self::urltitle | self::artwork ]", "judith-kerr-books", "Books by this Author");
+    showBookList(xml, "/bookstore/book[author='Stephen King']", "/bookstore/book[author='Stephen King']/descendant-or-self::*[self::title | self::urltitle | self::artwork ]", "stephen-king-books", "Books by this Author");
+    showBookList(xml, "/bookstore/book[author='Sophie Kinsella']", "/bookstore/book[author='Sophie Kinsella']/descendant-or-self::*[self::title | self::urltitle | self::artwork ]", "sophie-kinsella-books", "Books by this Author");
+    showBookList(xml, "/bookstore/book[author='Lucy Lane']", "/bookstore/book[author='Lucy Lane']/descendant-or-self::*[self::title | self::urltitle | self::artwork ]", "lucy-lane-books", "Books by this Author");
+    showBookList(xml, "/bookstore/book[author='Sophie Personne']", "/bookstore/book[author='Sophie Personne']/descendant-or-self::*[self::title | self::urltitle | self::artwork ]", "sophie-personne-books", "Books by this Author");
+    showBookList(xml, "/bookstore/book[author='Steve Richards']", "/bookstore/book[author='Steve Richards']/descendant-or-self::*[self::title | self::urltitle | self::artwork ]", "steve-richards-books", "Books by this Author");
+    showBookList(xml, "/bookstore/book[author='Bob Ross']", "/bookstore/book[author='Bob Ross']/descendant-or-self::*[self::title | self::urltitle | self::artwork ]", "bob-ross-books", "Books by this Author");
+    showBookList(xml, "/bookstore/book[author='Søren Sveistrup']", "/bookstore/book[author='Søren Sveistrup']/descendant-or-self::*[self::title | self::urltitle | self::artwork ]", "soren-sveistrup-books", "Books by this Author");
+}
+</script>
+</body>
+</html>

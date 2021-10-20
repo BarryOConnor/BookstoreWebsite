@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+
+<book category="Mystery, Crime &amp; Thriller" cover="paperback">
+  <title>The Bone Collector</title>
+  <urltitle>The-Bone-Collector</urltitle>
+  <artwork>jeffrey-deaver-bone-collector.jpg</artwork>
+  <author>Jeffery Deaver</author>
+  <urlauthor>Jeffery-Deaver</urlauthor>
+  <year>2014</year>
+  <price>8.99</price>
+  <rating>
+    <score>4</score>
+    <amount>245</amount>
+  </rating>
+  <description>
+    <short>New York City has been thrown into chaos by the assaults of the Bone Collector, a serial kidnapper and killer who gives the police a chance to save his victims from death by leaving obscure clues. Baffled, the cops turn to the one man with a chance of solving them - Lincoln Rhyme.</short>
+    <long>Left paralysed by a debilitating accident, ex NYPD cop Rhyme has to dig deep into the only world he has left - his astonishing mind - to have any hope of solving the case. With the help of a young police officer, Amelia Sachs, he starts to close in on the killer. But as he edges closer to the truth, the Bone Collector is closing in on Lincoln Rhyme himself.</long>
+  </description>
+  <reviews>
+    <review>
+      <source>Independant on Sunday</source>
+      <text>This is a novel that will chill your blood on the warmest day of any summer holiday. Keep looking over your shoulder...</text>
+    </review>
+  </reviews>
+</book>
+
+<book category="Mystery, Crime &amp; Thriller" cover="paperback">
+  <title>The Devil's Teardrop</title>
+  <urltitle>The-Devils-Teardrop</urltitle>
+  <artwork>jeffrey-deaver-devils-teardrop.jpg</artwork>
+  <author>Jeffery Deaver</author>
+  <urlauthor>Jeffery-Deaver</urlauthor>
+  <year>2016</year>
+  <price>8.99</price>
+  <rating>
+    <score>5</score>
+    <amount>66</amount>
+  </rating>
+  <description>
+    <short>9am, 31st December. A man gets onto the packed escalator of a metro station and fires a silenced machine gun through a paper bag. He escapes without being spotted in the chaos that follows.</short>
+    <long>A note is delivered to the mayor of Washington, D.C., demanding $20 million, or the writer will instruct the gunman to strike again, at 4 pm, 8 pm and midnight. The mayor decides to pay up. But then a man is killed in a hit and run accident - and his fingerprints match the ones on the note.--nl--With the brains behind the operation dead, there's no way of stopping the gunman killing again, and again, and again... The only evidence the FBI have is the note. And Parker Kincaid, forensic document expert, is the only man who can stop the killer. But he's running out of time...</long>
+  </description>
+  <reviews>
+    <review>
+      <source>Daily Telegraph</source>
+      <text>Deaver is a terrific storyteller, and he takes the reader on a rollercoaster of suspense, violence and mystery.</text>
+    </review>
+  </reviews>
+</book>
+
+<book category="Mystery, Crime &amp; Thriller" cover="hardback" released="false">
+  <title>The Goodbye Man</title>
+  <urltitle>The-Goodbye-Man</urltitle>
+  <artwork>jeffrey-deaver-goodbye-man.jpg</artwork>
+  <author>Jeffery Deaver</author>
+  <urlauthor>Jeffery-Deaver</urlauthor>
+  <year>2020</year>
+  <price>20.00</price>
+  <rating>
+    <score>0</score>
+    <amount>0</amount>
+  </rating>
+  <description>
+    <short>In pursuit of two young men accused of terrible hate crimes, Colter Shaw stumbles upon a clue to another mystery. In an effort to save the life of a young woman-and possibly others-he travels to the wilderness of Washington State to investigate a mysterious organization.</short>
+    <long>Is it a community that consoles the bereaved? Or a dangerous cult under the sway of a captivating leader? As he peels back the layers of truth, Shaw finds that some people will stop at nothing to keep their secrets hidden.--nl--All the while, Shaw must unravel an equally deadly enigma: locating and deciphering a message hidden by his father years ago, just before his death-a message that will have life-and-death consequences.</long>
+  </description>
+</book>
+
+<book category="Mystery, Crime &amp; Thriller" cover="paperback" special="true">
+  <title>The Chestnut Man</title>
+  <urltitle>The-Chestnut-Man</urltitle>
+  <artwork>soren-sveistrup-chestnut-man.jpg</artwork> 
+  <author>S&#248;ren Sveistrup</author>
+  <urlauthor>Soren-Sveistrup</urlauthor>
+  <year>2019</year>
+  <price>3.99</price>
+  <rating>
+    <score>4</score>
+    <amount>251</amount>
+  </rating>
+  <description>
+    <short>One October morning in a quiet suburb, the police make a terrible discovery.--nl--A young woman is found brutally murdered with one of her hands missing.--nl--Above her hangs a small doll made of chestnuts.</short>
+    <long>Examining the doll, Forensics are shocked to find a fingerprint belonging to a young girl, kidnapped and murdered a year ago.--nl--Can a new killer be the key to an old crime?--nl--And will his spree be over when winter arrives - or is he only just getting started?</long>
+  </description>
+  <reviews>
+    <review>
+      <source>Guardian</source>
+      <text>If you are one of the millions who enjoyed The Killing, you'll want to read the first novel by its creator.</text>
+    </review>
+    <review>
+      <source>Daily Express</source>
+      <text>If you're pining for a dose of Jo Nesbo-style Scandi noir, The Chestnut Man should hit the spot.</text>
+    </review>
+  </reviews>
+</book>
+
+<book category="Mystery, Crime &amp; Thriller" cover="paperback">
+  <title>The Suspect</title>
+  <urltitle>The-Suspect</urltitle>
+  <artwork>fiona-barton-the-suspect.jpg</artwork>
+  <author>Fiona Barton</author>
+  <urlauthor>Fiona-Barton</urlauthor>
+  <year>2019</year>
+  <price>4.50</price>
+  <rating>
+    <score>4</score>
+    <amount>416</amount>
+  </rating>
+  <description>
+    <short>When two eighteen-year-old girls go missing on their gap year in Thailand, their families are thrust into the international spotlight: desperate, bereft and frantic with worry.--nl--Journalist Kate Waters always does everything she can to be first to the story, first with the exclusive, first to discover the truth – and this time is no exception.</short>
+    <long>But she can’t help but think of her own son, who she hasn’t seen in two years, since he left home to go travelling. This time it’s personal.--nl--And as the case of the missing girls unfolds, they will all find that even this far away, danger can lie closer to home than you might think...</long>
+  </description>
+  <reviews>
+    <review>
+      <source>Daily Express</source>
+      <text>Fiona Barton is perceptive, empathetic and a talented writer.</text>
+    </review>
+  </reviews>
+</book>
+
+<book category="Children" cover="paperback" special="true">
+  <title>The Tiger Who Came to Tea</title>
+  <urltitle>The-Tiger-Who-Came-to-Tea</urltitle>
+  <artwork>judith-kerr-tiger-who.jpg</artwork>
+  <author>Judith Kerr</author>
+  <urlauthor>Judith-Kerrr</urlauthor>
+  <year>2018</year>
+  <price>3.99</price>
+  <rating>
+    <score>5</score>
+    <amount>1492</amount>
+  </rating>
+  <description>
+    <short>The doorbell rings just as Sophie and her mummy are sitting down to tea. Who could it possibly be? What they certainly don't expect to see at the door is a big furry, stripy tiger!</short>
+    <long>This inimitable picture book is perfect for reading aloud, or for small children to read to themselves time and again. First published in 1968 and never out of print, it has become a timeless classic enjoyed and beloved by generations of children.--nl--The magic begins at teatime!</long>
+  </description>
+  <reviews>
+    <review>
+      <source>The Independant</source>
+      <text>A Modern Classic.</text>
+    </review>
+  </reviews>
+</book>
+
+<book category="Fantasy &amp; Adventure" cover="paperback" special="true" homepage="true">
+  <title>Belgariad 1: Pawn of Prophecy</title>
+  <urltitle>Belgariad-1-Pawn-of-Prophecy</urltitle>
+  <artwork>david-eddings-belgariad-1.jpg</artwork>
+  <author>David Eddings</author>
+  <urlauthor>David-Eddings</urlauthor>
+  <year>2006</year>
+  <price>7.99</price>
+  <rating>
+    <score>4</score>
+    <amount>340</amount>
+  </rating>
+  <description>
+    <short>An ancient prophecy &amp; and a maimed God...--nl--Long ago, the evil God Torak fought a war to obtain an object of immense power - the Orb of Aldur.But Torak was defeated and the Orb reclaimed by Belgarath the sorcerer.</short>
+    <long>Garion, a young farm lad, loves the story when he first hears it from the old storyteller. But it has nothing to do with him. Or does it? For the stories also tell of a prophecy that must be fulfilled - a destiny handed down through the generations.--nl--And Torak is stirring again...</long>
+  </description>
+  <reviews>
+    <review>
+      <source>Anne McCaffrey</source>
+      <text>Fabulous.</text>
+    </review>
+    <review>
+      <source>Darren Shan</source>
+      <text>Fun, exciting, intriguing fantasy in which the characters are as important as the quest and magical elements... immerse yourself and enjoy!</text>
+    </review>
+  </reviews>
+</book>
+
+<book category="Fantasy &amp; Adventure" cover="paperback">
+  <title>Belgariad 2: Queen of Sorcery</title>
+  <urltitle>Belgariad-2-Queen-of-Sorcery</urltitle>
+  <artwork>david-eddings-belgariad-2.jpg</artwork>
+  <author>David Eddings</author>
+  <urlauthor>David-Eddings</urlauthor>
+  <year>2006</year>
+  <price>5.75</price>
+  <rating>
+    <score>4</score>
+    <amount>161</amount>
+  </rating>
+  <description>
+    <short>Mistress of the Will and the Word...--nl--Legends tell how Belgarath the sorcerer and his daughter Polgara defeated the evil God Torak, imprisoning him in an endless sleep. But now a priest of Torak is racing to his God with the Orb of Aldur, racing to reawaken him.</short>
+    <long>Belgarath and Polgara are on his trail. With them is Garion, a simple farm boy only months before. And with each league the group travel, through Arendia and Tolnedra and on into Nyissa, the land of the Serpent Queen the power of sorcery is growing in Garion...--nl--QUEEN OF SORCERY is the second book in a magnificent fantasy epic set against a history of seven thousand years of struggles between Gods and Kings and men.</long>
+  </description>
+  <reviews>
+    <review>
+      <source>Anne McCaffrey</source>
+      <text>Fabulous.</text>
+    </review>
+    <review>
+      <source>Darren Shan</source>
+      <text>Fun, exciting, intriguing fantasy in which the characters are as important as the quest and magical elements... immerse yourself and enjoy!</text>
+    </review>
+  </reviews>
+</book>
+
+<book category="Fantasy &amp; Adventure" cover="paperback">
+  <title>Belgariad 3: Magician's Gambit</title>
+  <urltitle>Belgariad-3-Magicians-Gambit</urltitle>
+  <artwork>david-eddings-belgariad-3.jpg</artwork>
+  <author>David Eddings</author>
+  <urlauthor>David-Eddings</urlauthor>
+  <year>2006</year>
+  <price>5.75</price>
+  <rating>
+    <score>4</score>
+    <amount>151</amount>
+  </rating>
+  <description>
+    <short>Many thousands of years ago, two prophecies came into being and a moment was fixed, when only one would determine the future. This moment, a clash between the maimed god Torak and the descendant of the Rivan king, is approaching...</short>
+    <long>Garion, was brought up as a farm lad but is now beginning to understand the extent of his part in the prophecy, and working hard to control his sorcerous power. He is travelling towards this meeting in a sinister tower where the evil god lies sleeping. With him is the wise sorcerer Belgarath. And Ce'Nedra - a wilful young princess who refuses to believe in sorcery, but is terrified that Garion will die in the coming confrontation...</long>
+  </description>
+  <reviews>
+    <review>
+      <source>Anne McCaffrey</source>
+      <text>Fabulous.</text>
+    </review>
+    <review>
+      <source>Darren Shan</source>
+      <text>Fun, exciting, intriguing fantasy in which the characters are as important as the quest and magical elements... immerse yourself and enjoy!</text>
+    </review>
+  </reviews>
+</book>
+
+<book category="Fantasy &amp; Adventure" cover="paperback">
+  <title>Belgariad 4: Castle of Wizardry</title>
+  <urltitle>Belgariad-4-Castle-of-Wizardry</urltitle>
+  <artwork>david-eddings-belgariad-4.jpg</artwork>
+  <author>David Eddings</author>
+  <urlauthor>David-Eddings</urlauthor>
+  <year>2006</year>
+  <price>5.75</price>
+  <rating>
+    <score>4</score>
+    <amount>148</amount>
+  </rating>
+  <description>
+    <short>In the Hall of the Rivan King...--nl--Garion, once a simple farm lad, but now realizing his potential as a sorcerer  has regained the stolen Orb of Aldur.Its song soars as Garion and his companions race to return it to its rightful home on the Island of Riva.</short>
+    <long>It's a perilous journey through a desert teeming with Murgo soldiers, while Grolims strive to use their dark magic to destroy them. And when Garion finally returns the Orb to the sword of the Rivan King and holds it aloft, a voice echoes in a dark tomb as his adversary, the evil God Torak, is stirring after centuries of slumber...</long>
+  </description>
+  <reviews>
+    <review>
+      <source>Anne McCaffrey</source>
+      <text>Fabulous.</text>
+    </review>
+    <review>
+      <source>Darren Shan</source>
+      <text>Fun, exciting, intriguing fantasy in which the characters are as important as the quest and magical elements... immerse yourself and enjoy!</text>
+    </review>
+  </reviews>
+</book>
+
+<book category="Fantasy &amp; Adventure" cover="paperback">
+  <title>Belgariad 5: Enchanter's End Game</title>
+  <urltitle>Belgariad-5-Enchanters-End-Game</urltitle>
+  <artwork>david-eddings-belgariad-5.jpg</artwork>
+  <author>David Eddings</author>
+  <urlauthor>David-Eddings</urlauthor>
+  <year>2006</year>
+  <price>5.75</price>
+  <rating>
+    <score>4</score>
+    <amount>161</amount>
+  </rating>
+  <description>
+    <short>"Come, Belgarion, Child of Light. I await thee in the City of Night..."--nl--Garion has been crowned as Overlord of the West, the rightful descendant of Riva Iron-grip and the bearer of the Orb of Aldur.--nl--But the Prophecy is not yet fulfilled. For across the seas, the evil God Torak is waking once more.</short>
+    <long>While hordes of Murgos and Grolims march under his banner to destroy the free peoples of the Alorn kingdoms, Garion must ride towards a meeting that has been prophesied since the beginning of time. In the decaying ruins of the City of Endless Night, he must face the Dragon-God in a dread duel, the outcome of which will determine the destiny of the entire world...--nl--ENCHANTERS END GAME is the final, triumphant book in a magnificent fantasy epic set against a history of seven thousand years of struggles between Gods and Kings and men.</long>
+  </description>
+  <reviews>
+    <review>
+      <source>Anne McCaffrey</source>
+      <text>Fabulous.</text>
+    </review>
+    <review>
+      <source>Darren Shan</source>
+      <text>Fun, exciting, intriguing fantasy in which the characters are as important as the quest and magical elements... immerse yourself and enjoy!</text>
+    </review>
+  </reviews>
+</book>
+
+<book category="Romance" cover="hardback">
+  <title>Christmas Shopaholic</title>
+  <urltitle>Christmas-Shopaholic</urltitle>
+  <artwork>sophie-kinsella-christmas-shopaholic.jpg</artwork>
+  <author>Sophie Kinsella</author>
+  <urlauthor>Sophie-Kinsella</urlauthor>
+  <year>2019</year>
+  <price>9.99</price>
+  <rating>
+    <score>4</score>
+    <amount>106</amount>
+  </rating>
+  <description>
+    <short>Becky Brandon (née Bloomwood) adores Christmas. It's always the same – Mum and Dad hosting, carols playing, Mum pretending she made the Christmas pudding, and the next-door neighbours coming round for sherry in their terrible festive jumpers.--nl--And now it's even easier with online bargain-shopping sites – if you spend enough you even get free delivery. Sorted!</short>
+    <long>But this year looks set to be different. Unable to resist the draw of craft beer and smashed avocado, Becky's parents are moving to ultra-trendy Shoreditch and have asked Becky if she'll host Christmas this year. What could possibly go wrong?--nl--With sister Jess demanding a vegan turkey, husband Luke determined that he just wants aftershave again, and little Minnie insisting on a very specific picnic hamper – surely Becky can manage all this, as well as the surprise appearance of an old boyfriend and his pushy new girlfriend, whose motives are far from clear...--nl--Will chaos ensue, or will Becky manage to bring comfort and joy to Christmas?</long>
+  </description>
+  <reviews>
+    <review>
+      <source>Woman's Weekly</source>
+      <text>A brilliant, laugh-out-loud read.</text>
+    </review>
+  </reviews>
+</book>
+
+<book category="Horror" cover="paperback" special="true" homepage="true">
+  <title>IT</title>
+  <urltitle>IT</urltitle>
+  <artwork>stephen-king-it.jpg</artwork>
+  <author>Stephen King</author>
+  <urlauthor>Stephen-King</urlauthor>
+  <year>2017</year>
+  <price>4.50</price>
+  <rating>
+    <score>4</score>
+    <amount>1026</amount>
+  </rating>
+  <description>
+    <short>To the children, the town was their whole world. To the adults, knowing better, Derry Maine was just their home town: familiar, well-ordered for the most part. A good place to live.It is the children who see - and feel - what makes the small town of Derry so horribly different.</short>
+    <long>In the storm drains, in the sewers, IT lurks, taking on the shape of every nightmare, each one's deepest dread. Sometimes IT reaches up, seizing, tearing, killing ...Time passes and the children grow up, move away and forget. Until they are called back, once more to confront IT as IT stirs and coils in the sullen depths of their memories, reaching up again to make their past nightmares a terrible present reality.</long>
+  </description>
+  <reviews>
+    <review>
+      <source>Guardian</source>
+      <text>One of the greatest storytellers of our time.</text>
+    </review>
+    <review>
+      <source>The Sunday Times</source>
+      <text>A writer of excellence... King is one of the most fertile storytellers of the modern novel.</text>
+    </review>
+  </reviews>
+</book>
+
+<book category="Science Fiction" cover="paperback">
+  <title>Leviathan Wakes</title>
+  <urltitle>Leviathan-Wakes</urltitle>
+  <artwork>james-corey-leviathan-wakes.jpg</artwork>
+  <author>James S. A. Corey</author>
+  <urlauthor>James-S-A-Corey</urlauthor>
+  <year>2012</year>
+  <price>7.93</price>
+  <rating>
+    <score>4</score>
+    <amount>506</amount>
+  </rating>
+  <description>
+    <short>Humanity has colonised the solar system - Mars, the Moon, the Asteroid Belt and beyond - but the stars are still out of our reach.</short>
+    <long>Jim Holden is an officer on an ice miner making runs from the rings of Saturn to the mining stations of the Belt. When he and his crew discover a derelict ship called the Scopuli, they suddenly find themselves in possession of a deadly secret. A secret that someone is willing to kill for, and on an unimaginable scale. War is coming to the system, unless Jim can find out who abandoned the ship and why.--nl--Detective Miller is looking for a girl. One girl in a system of billions, but her parents have money - and money talks. When the trail leads him to the Scopuliand Holden, they both realise this girl may hold the key to everything.--nl--Holden and Miller must thread the needle between the Earth government, the Outer Planet revolutionaries and secret corporations, and the odds are against them. But out in the Belt, the rules are different, and one small ship can change the fate of the universe.</long>
+  </description>
+  <reviews>
+    <review>
+      <source>SciFiNow</source>
+      <text>Tense and thrilling.</text>
+    </review>
+    <review>
+      <source>wired.com</source>
+      <text>Great characters, excellent dialogue, memorable fights.</text>
+    </review>
+  </reviews>
+</book>
+
+<book category="Cooking" cover="hardback" special="true" homepage="true">
+  <title>Mary Berry’s Quick Cooking</title>
+  <urltitle>Mary-Berrys-Quick-Cooking</urltitle>
+  <artwork>mary-berry-quick-cooking.jpg</artwork>
+  <author>Mary Berry</author>
+  <urlauthor>Mary-Berry</urlauthor>
+  <year>2017</year>
+  <price>10.99</price>
+  <rating>
+    <score>4</score>
+    <amount>287</amount>
+  </rating>
+  <description>
+    <short>The nation’s queen of home cooking brings her foolproof, delicious approach to quick fix recipes.--nl--In this brand-new, official tie-in to the major BBC Two series, Mary shows how being in a rush will never be a problem again. Find brilliant 20- and 30-minute meals and enjoy wonderful dishes that can be swiftly assembled and then left to cook away while you do something else.</short>
+    <long>Mary’s utterly reliable, always delicious fast dishes tempt any tastebuds and her no-fuss expertise means you can cook from scratch and put mouth-watering home-cooked food on your family’s table without compromising on quality or freshness.--nl--This stunning cookbook, packed with colourful photography, includes over 120 new recipes, including all the recipes from the series, plus Mary’s trademark no-nonsense tips and techniques for getting ahead in the kitchen so cooking is always stress-free.</long>
+  </description>
+  <reviews>
+    <review>
+      <source>Sandra's Kitchen Nook</source>
+      <text>This is a delightful cookbook that any Mary Berry fan would love to own.</text>
+    </review>
+  </reviews>
+</book>
+
+<book category="DIY" cover="paperback">
+  <title>How to Fix Everything for Dummies</title>
+  <urltitle>How-to-Fix-Everything-for-Dummies</urltitle>
+  <artwork>gary-hedstrom-everything-dummies.jpg</artwork>
+  <author>Gary Hedstrom</author>
+  <urlauthor>Gary-Hedstrom</urlauthor>
+  <year>2012</year>
+  <price>9.42</price>
+  <rating>
+    <score>4</score>
+    <amount>506</amount>
+  </rating>
+  <description>
+    <short>Want to tackle your own home repairs? This clear, hands-on guide shows you how to take on repairs yourself with plenty of step-by-step instructions. From working on walls, floors, and doors to conquering heating, electric, and plumbing repairs, you'll see how to fix what goes wrong in your home - and identify the projects the pros should handle.</short>
+    <long>The fun and easy way to repair anything and everything around the house For anyone who's ever been frustrated by repair shop rip-offs, this guide shows how to troubleshoot and fix a wide range of household appliances-lamps, vacuum cleaners, washers, dryers, dishwashers, garbage disposals, blenders, radios, televisions, and even computers. Packed with step-by-step illustrations and easy-to-follow instructions, it's a must-have money-saver for the half of all homeowners who undertake do-it-yourself projects.</long>
+  </description>
+</book>
+
+<book category="Relationships" cover="paperback">
+  <title>Your Other Half: The Guide to Better Relationships with Others &amp; Yourself</title>
+  <urltitle>Your-Other-Half-The-Guide-to-Better-Relationships-with-Others-and-Yourself</urltitle>
+  <artwork>sophie-personne-other-half.jpg</artwork>
+  <author>Sophie Personne</author>
+  <urlauthor>Sophie-Personne</urlauthor>
+  <year>2017</year>
+  <price>12.98</price>
+  <rating>
+    <score>4</score>
+    <amount>62</amount>
+  </rating>
+  <description>
+    <short>Sophie Personne is a Relationship Expert, helping people in her own unique way to discover the solutions to the problems they experience with others and themselves. She has coached singles, couples and groups, working on relationships of all kinds.</short>
+    <long>Relationships can be complicated... In a world where we are more connected than we have ever been, we are probably also the loneliest we have ever been. We can watch people’s lives unfold through social media and compare them to our own, often leaving us with a feeling of inadequacy.Singletons struggle to meet their significant others whilst for some, being in a relationship is not as fulfilling as they would want it to be. Feeling stuck in a rut and misunderstood as life and routine slowly take over, we sometimes wish things could be different. We look to find reasons and answers to make our lives better, trying miracle cure after miracle cure, failing miserably and repeating the same mistakes. This book will take you through a journey of understanding what the deep root cause of your present situation really is, unlocking the answers and send you on your way to happiness and fulfilment, by teaching you simple methods and thought processes that can be easily applied. It has been designed to help if you are struggling with current relationships or seeking a new one.</long>
+  </description>
+</book>
+
+<book category="Psychology" cover="hardback">
+  <title>The Little Book of Positivity</title>
+  <urltitle>The-Little-Book-of-Positivity</urltitle>
+  <artwork>lucy-lane-little-book-of-positivity.jpg</artwork>
+  <author>Lucy Lane</author>
+  <urlauthor>Lucy-Lane</urlauthor>
+  <year>2015</year>
+  <price>4.95</price>
+  <rating>
+    <score>4</score>
+    <amount>42</amount>
+  </rating>
+  <description>
+    <short>In a world where we're constantly bombarded by work and worry, we all need a little boost to our happiness levels now and then. This book of inspiring quotations and simple, easy-to-follow tips provides you with practical advice on thinking positively and achieving a more balanced attitude to life.</short>
+    <long>Uplifting and thought provoking. Full of sayings, poems and verses that are great to read and help you feel more positive.</long>
+  </description>
+</book>
+
+<book category="History" cover="paperback">
+  <title>Sapiens: A Brief History of Humankind</title>
+  <urltitle>Sapiens-A-Brief-History-of-Humankind</urltitle>
+  <artwork>yuval-harari-sapiens.jpg</artwork>
+  <author>Yuval Noah Harari</author>
+  <urlauthor>Yuval-Noah-Harari</urlauthor>
+  <year>2015</year>
+  <price>7.93</price>
+  <rating>
+    <score>4</score>
+    <amount>2852</amount>
+  </rating>
+  <description>
+    <short>Fire gave us power. Farming made us hungry for more. Money gave us purpose. Science made us deadly. This is the thrilling account of our extraordinary history – from insignificant apes to rulers of the world.</short>
+    <long>Earth is 4.5 billion years old. In just a fraction of that time, one species among countless others has conquered it: us.--nl--In this bold and provocative book, Yuval Noah Harari explores who we are, how we got here and where we’re going.</long>
+  </description>
+  <reviews>
+    <review>
+      <source>Bill Gates</source>
+      <text>I would recommend Sapiens to anyone who’s interested in the history and future of our species.</text>
+    </review>
+  </reviews>
+</book>
+
+<book category="Politics" cover="hardback">
+  <title>The Prime Ministers: Reflections on Leadership from Wilson to May</title>
+  <urltitle>The-Prime-Ministers-Reflections-on-Leadership-from-Wilson-to-May</urltitle>
+  <artwork>steve-richards-prime-ministers.jpg</artwork>
+  <author>Steve Richards</author>
+  <urlauthor>Steve-Richards</urlauthor>
+  <year>2019</year>
+  <price>13.13</price>
+  <rating>
+    <score>4</score>
+    <amount>23</amount>
+  </rating>
+  <description>
+    <short>A landmark history of the men and women who have defined the UK's role in the modern world - and what makes them special - by a seasoned political journalist.--nl--At a time of unprecedented political upheaval, this magisterial history explains who leads us and why.</short>
+    <long>From Harold Wilson to Theresa May, it brilliantly brings to life all nine inhabitants of 10 Downing Street over the past fifty years, vividly outlining their successes and failures - and what made each of them special. Based on unprecedented access and in-depth interviews, and inspired by the author's BBC Radio 4 and television series, Steve Richards expertly examines the men and women who have defined the UK's role in the modern world and sheds new light on the demands of the highest public office in the land.</long>
+  </description>
+  <reviews>
+    <review>
+      <source>John Humphreys</source>
+      <text>Fascinating, revealing and entertaining.</text>
+    </review>
+    <review>
+      <source>Polly Toynbee</source>
+      <text>A pure pleasure to read.</text>
+    </review>
+  </reviews>
+</book>
+
+<book category="Art &amp; Drawing" cover="paperback" special="true" homepage="true">
+  <title>Painting with Bob Ross: Learn to paint in oil step by step!</title>
+  <urltitle>Painting-with-Bob-Ross-Learn-to-paint-in-oil-step-by-step</urltitle>
+  <artwork>bob-ross-painting.jpg</artwork>
+  <author>Bob Ross</author>
+  <urlauthor>Bob-Ross</urlauthor>
+  <year>2018</year>
+  <price>9.99</price>
+  <rating>
+    <score>5</score>
+    <amount>19</amount>
+  </rating>
+  <description>
+    <short>Painting with Bob Ross—with artwork created by Bob Ross himself using his specially formulated oil paints, brushes, basecoats, and other tools—introduces artists and Bob Ross fans to the basics of painting landscapes.</short>
+    <long>Even if you’re brand new to painting, remember that Bob said, “Talent is nothing more than a pursued interest. All you need to paint is a few tools, a little instruction, and a vision in your mind.” Throughout this book, Bob’s quotes encourage you to keep going.--nl--So grab your copy of Painting with Bob Ross, relax and unwind, and paint a Bob Ross-inspired landscape! You can paint graceful mountains, ocean waves crashing onto rocks, a winter cabin, a lakeside path, a deep forest river, and many more breathtaking views. And don’t forget to sign each of your masterpieces once you’ve completed the last step!</long>
+  </description>
+  <reviews>
+    <review>
+      <source>The Beacon</source>
+      <text>For some, learning a new creative skill may be best accomplished in private rather than in a formal class setting. Painting with Bob Ross gives beginners a perfect format to gain mastery creating landscapes in oil. ... The fun you’ll have in the process — not to mention your utter absorption in the act of putting brush to canvas — will fill many hours of leisure time. When you’ve created your own work of art, the sense of accomplishment will surely enhance your life.</text>
+    </review>
+  </reviews>
+</book>
+
+</bookstore>

@@ -1,0 +1,377 @@
+
+
+<!DOCTYPE html>
+<html lang="en" class="text-100">
+<head>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+
+    <!-- ############################# INFORMATION #############################
+
+### VALIDATION ###
+This page and corresponding CSS have been checked on the W3c HTML5 and CSS3 
+validator and have passed I chose not to include the badge purely for stylistic 
+reasons.
+
+### ACKNOWLEDGEMENTS ###
+
+- This site uses fontawesome (https://fontawesome.com) for icons
+- This page uses XML code and the getXMLContent function which are adapted from the XPath tutorials 
+  available on W3CSchools at https://www.w3schools.com/xml/xpath_examples.asp
+
+     ####################################################################### -->
+
+    <title>Barry's Bargain Books :: Genres</title>
+    <meta name="description" content="Barry's Bargain Books: Discover your next favourite book from our list of fantastic books to read!">
+    <meta name="keywords" content="books, buy books, books online, paperback books, favourite book, reading, discounted, cheap">
+    <meta name="author" content="Barry O'Connor">
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/boc.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
+</head>
+<body>
+<body>
+    <!-- screenreader / keyboard link displayed offscreen to allow skipping the menu and accessing main content -->
+    <a class="skip-main" href="#main">Skip to main content</a>
+
+    <!-- cookie bar to allow for GDPR compliance -->
+    <div id="cookiebar"><p>This website uses cookies</p>
+        <button type="button" onclick="viewCookieInfo();" onkeypress="viewCookieInfo();">Read More</button>
+        <button type="button" onclick="acceptCookies();" onkeypress="acceptCookies();">Accept Cookies</button>
+    </div>
+
+    <!-- main header for the site -->
+    <header class="boc-lblue-bg">
+        <div class="boc-grid-container boc-header-cols">
+            <div>
+                <!-- Logo with link to home page -->
+                <a href="index.html" title="retrun to the home page"><img src="images/logo.png" alt="Logo for Barry's Bargain Books" /></a>
+            </div>
+            <div>
+                <!-- Text size functionality to allow visually impaired users to increase text size up to 200% -->
+                <a href="#" class="text-100" onclick="changeFontSize(100);" onkeypress="changeFontSize(100);" title="set page text size to 100%">A</a>
+                <a href="#" class="text-150" onclick="changeFontSize(150);" onkeypress="changeFontSize(150);" title="set page text size to 150%">A</a>
+                <a href="#" class="text-200" onclick="changeFontSize(200);" onkeypress="changeFontSize(200);" title="set page text size to 200%">A</a>
+                
+                <!-- search form -->
+                <form id="search-form" action="search.html">
+                    <input type="search" id="search-field" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <span id="search-field-msg"></span>
+                </form>
+            </div>
+            <div id="header-buttons">
+                <!-- Buttons to access Shopping Basket and Account -->
+                <button type="button" onclick="openAccount();" onkeypress="openAccount();"><i class="fas fa-user"></i>Account</button>
+                <button type="button" onclick="openBasket();" onkeypress="openBasket();"><i class="fas fa-shopping-cart"></i>Basket</button>
+            </div>  
+        </div>
+    </header>
+
+
+
+    <nav id="main-menu" class="boc-black-bg">
+        <!-- menu on tablets and screens -->
+        <ul class="boc-grid-container boc-hide-mobile">
+            <li><a href="index.html"><span><i class="fas fa-home" aria-hidden="true"></i>Home</span></a></li>
+            <li><a href="coming-soon.html"><span><i class="far fa-book" aria-hidden="true"></i>Coming Soon</span></a></li>
+            <li class="active"><a href="genres.html"><span><i class="fas fa-book-reader" aria-hidden="true"></i>Genres</span></a></li>
+            <li><a href="authors.html"><span><i class="far fa-id-badge" aria-hidden="true"></i>Authors</span></a></li>
+            <li><a href="special-offers.html"><span><i class="fas fa-tags" aria-hidden="true"></i>Special Offers</span></a></li>
+            <li><a href="report.html"><span><i class="far fa-file-code" aria-hidden="true"></i>Report</span></a></li>
+        </ul>
+
+        <!-- menu for mobiles -->
+        <a class="boc-menu-button boc-show-inline-mobile" href="javascript:void(0);" onclick="toggleMenu()" onkeypress="toggleMenu()" title="Toggle Navigation Menu"><span class="fa fa-bars"></span></a>
+        <a class="boc-account boc-show-inline-mobile" href="basket.html"><i class="fas fa-shopping-cart"></i>Basket</a>
+        <a class="boc-account boc-show-inline-mobile" href="account.html""><i class="fas fa-user"></i>Account</a>
+        <ul id="dropdown-nav" class="boc-black-bg boc-grid-container boc-hide">
+            <li><a href="index.html"><span><i class="fas fa-home" aria-hidden="true"></i>Home</span></a></li>
+            <li><a href="coming-soon.html"><span><i class="far fa-book" aria-hidden="true"></i>Coming Soon</span></a></li>
+            <li class="active"><a href="genres.html"><span><i class="fas fa-book-reader" aria-hidden="true"></i>Genres</span></a></li>
+            <li><a href="authors.html"><span><i class="far fa-id-badge" aria-hidden="true"></i>Authors</span></a></li>
+            <li><a href="special-offers.html"><span><i class="fas fa-tags" aria-hidden="true"></i>Special Offers</span></a></li>
+            <li><a href="report.html"><span><i class="far fa-file-code" aria-hidden="true"></i>Report</span></a></li>
+        </ul>
+    </nav>
+
+
+
+
+    <main id="main">
+        <section class="boc-white-bg">
+            
+            <h1 class="boc-mblue-bg boc-pad-1 boc-center">Genres</h1>
+            <div id="breadcrumb" class="boc-lgrey-bg">
+                <div class="boc-grid-container">
+                    <a href="index.html" title="retrun to the home page">Home</a>
+                    <span class="separator">></span>
+                    <span class="current">Genres</span>
+                </div>
+            </div>
+            <div id="authors" class="boc-pad-2">
+                <article id="Art-and-Drawing" class="boc-author-box boc-grid-container boc-grid-gap boc-1-3-cols">
+                    <div class="image-col">
+                        <img src="images/genres/art.jpg" alt="image depicting artist's brushes and paints">
+                    </div>
+                    <div class="content-col">
+                        <h2>Art &amp; Drawing</h2>
+                        <p>Whether you're interested in art as a subject or learning how to draw or paint, this genre contains many helpful and informative books to help grow your inner artist.</p>
+                        
+                        <div id="art-books"></div>
+                    </div>
+                </article>
+                <hr />
+
+                <article id="Children" class="boc-author-box boc-grid-container boc-grid-gap boc-1-3-cols">
+                    <div class="image-col">
+                        <img src="images/genres/children.jpg" alt="Image depicting a child reading a book">
+                    </div>
+                    <div class="content-col">
+                        <h2>Children</h2>
+                        <p>This Genre contqains books suitable for a younger audience and is focused on stories to entertain children and young adults. </p>
+                        
+                        <div id="children-books"></div>
+                    </div>
+                </article>
+                <hr />
+
+                <article id="Cooking" class="boc-author-box boc-grid-container boc-grid-gap boc-1-3-cols">
+                    <div class="image-col">
+                        <img src="images/genres/cooking.jpg" alt="image depicting a man cooking some food">
+                    </div>
+                    <div class="content-col">
+                        <h2>Cooking</h2>
+                        <p>Books dealing with all aspects of preparing and serving food are the focus of this genre. From recipe books to meal planners, you'll find everything to keep your family and guests happy at mealtimes.</p>
+                        
+                        <div id="cooking-books"></div>
+                    </div>
+                </article>
+                <hr /> 
+
+                <article id="DIY" class="boc-author-box boc-grid-container boc-grid-gap boc-1-3-cols">
+                    <div class="image-col">
+                        <img src="images/genres/diy.jpg" alt="Image depicting some DIY tools">
+                    </div>
+                    <div class="content-col">
+                        <h2>DIY</h2>
+                        <p>DIY is becoming more popular as people are tightening their belts to save money. These books will help you to understand how to do the jobs around the house that need doing and stop you making costly mistakes.</p>
+                        
+                        <div id="diy-books"></div>
+                    </div>
+                </article>
+                <hr />
+
+                <article id="Fantasy-and-Adventure" class="boc-author-box boc-grid-container boc-grid-gap boc-1-3-cols">
+                    <div class="image-col">
+                        <img src="images/genres/fantasy.jpg" alt="Image depicting a fantasry style landscape with a castle and some travellers">
+                    </div>
+                    <div class="content-col">
+                        <h2>Fantasy &amp; Adventure</h2>
+                        <p>A Book under this genre contains a story set in a fantasy world – a world that is not real and often includes magic, magical creatures, and supernatural events.</p>
+                        
+                        <div id="fantasy-books"></div>
+                    </div>
+                </article>
+                <hr />
+
+                <article id="History" class="boc-author-box boc-grid-container boc-grid-gap boc-1-3-cols">
+                    <div class="image-col">
+                        <img src="images/genres/history.jpg" alt="Image depicting some egyptian paintings and heiroglyphics">
+                    </div>
+                    <div class="content-col">
+                        <h2>History</h2>
+                        <p>Stories and books focusing on past events on a real people or events. Often, they are written in a text book format and deal with dates and events indepth.</p>
+                        
+                        <div id="history-books"></div>
+                    </div>
+                </article>
+                <hr />
+
+                <article id="Horror" class="boc-author-box boc-grid-container boc-grid-gap boc-1-3-cols">
+                    <div class="image-col">
+                        <img src="images/genres/horror.jpg" alt="Image depicting faces and hands pressing against a backlit material in a horror style">
+                    </div>
+                    <div class="content-col">
+                        <h2>Horror</h2>
+                        <p>Horror is a genre that is intended to or has the ability to create the feeling of fear, repulsion, fright or terror in the readers. In other words, it creates a frightening and horror atmosphere.</p>
+                        
+                        <div id="horror-books"></div>
+                    </div>
+                </article>
+                <hr />
+
+                <article id="Mystery-Crime-and-Thriller" class="boc-author-box boc-grid-container boc-grid-gap boc-1-3-cols">
+                    <div class="image-col">
+                        <img src="images/genres/mystery.jpg" alt="Image depicting a 1920's detective in shadow wearing a trench coat and fedora">
+                    </div>
+                    <div class="content-col">
+                        <h2>Mystery, Crime &amp; Thriller</h2>
+                        <p>This book genre deals with Mystery, crime, criminal motives and the investigation and detection of the crime and criminals.</p>
+                        
+                        <div id="mystery-books"></div>
+                    </div>
+                </article>
+                <hr />
+                
+                <article id="Politics" class="boc-author-box boc-grid-container boc-grid-gap boc-1-3-cols">
+                    <div class="image-col">
+                        <img src="images/genres/politics.jpg" alt="Image depicts a stylised rendition of a rally with megaphones and placards being waved">
+                    </div>
+                    <div class="content-col">
+                        <h2>Politics</h2>
+                        <p>Books focusing on people in politics and political matters both past and present. If you love the arena of politics, you'll love this genre.</p>
+                        
+                        <div id="politics-books"></div>
+                    </div>
+                </article>
+                <hr />
+
+                 <article id="Psychology" class="boc-author-box boc-grid-container boc-grid-gap boc-1-3-cols">
+                    <div class="image-col">
+                        <img src="images/genres/psychology.jpg" alt="Image depicting a human brain with equations surrounding the brain">
+                    </div>
+                    <div class="content-col">
+                        <h2>Psychology</h2>
+                        <p>Delve into the hidden secrets of the human mind with this genre which focuses on the various aspects of the science of Psychology.</p>
+                        
+                        <div id="psychology-books"></div>
+                    </div>
+                </article>
+                <hr />
+                
+               <article id="Relationships" class="boc-author-box boc-grid-container boc-grid-gap boc-1-3-cols">
+                    <div class="image-col">
+                        <img src="images/genres/relationships.jpg" alt="Image depicting paper cutout men and women holding hands in a chain">
+                    </div>
+                    <div class="content-col">
+                        <h2>Relationships</h2>
+                        <p>Relationship books help you to understand and deal with issues in your relationships. Whether this is with a partner, loved one or family member, these books are a guide to maximising all your relationships.</p>
+                        
+                        <div id="relationships-books"></div>
+                    </div>
+                </article>
+                <hr />
+                            
+                <article id="Romance" class="boc-author-box boc-grid-container boc-grid-gap boc-1-3-cols">
+                    <div class="image-col">
+                        <img src="images/genres/romance.jpg" alt="Image depicting a young couple embracing each other with love hearts around them">
+                    </div>
+                    <div class="content-col">
+                        <h2>Romance</h2>
+                        <p>The primary focus of romance fiction is on the relationship and romantic love between two people. These books have an emotionally satisfying and optimistic ending.</p>
+                        
+                        <div id="romance-books"></div>
+                    </div>
+                </article>
+                <hr />
+                
+                <article id="Science-Fiction" class="boc-author-box boc-grid-container boc-grid-gap boc-1-3-cols">
+                    <div class="image-col">
+                        <img src="images/genres/scifi.jpg" alt="Image depicting a Science Fiction scene with an astronaut standing on a space station, looking down on the planet below.">
+                    </div>
+                    <div class="content-col">
+                        <h2>Science Fiction</h2>
+                        <p>Science Fiction typically deals with imaginative and futuristic concepts such as advanced science and technology, time travel, extraterrestrial life, etc. The stories are often set in the future or on other planets.</p>
+                        
+                        <div id="scifi-books"></div>
+                    </div>
+                </article>
+                <hr />               
+                
+            </div>
+        </section>
+        <section class="boc-dblue-bg">
+            <div class="boc-grid-container">
+                <h3>About Us</h3>
+                <p>We love books! Ever since opening the shop, we have strived to fulfill one single aim: to help each and every customer find their new favourite book. That's a huge claim but we feel that if the process is simple enough and you are given advice when you need it, this will help in making sure you love the books you buy.</p>
+                <p>Established in 2000, we have sold millions of books, from worldwide bestsellers to local interest history books. We operate online and in your local highstreet where our friendly staff will be more than happy to have a friendly chat about what type of book you like and suggest books you may like. Every one of our staff love books as much as you do, we encourage them to read new books so that they can pass on their own personal experience directly to you.</p>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer class="boc-black-bg">
+        
+        <!-- Bottom bar navigation -->
+        <nav class="boc-grid-container boc-3-cols">
+            <div>
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                </ul>     
+            </div>
+            <div>
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="returns.html">Returns</a></li>
+                    <li><a href="delivery.html">Delivery</a></li>
+                    <li><a href="complaints.html">Complaints</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Account</h4>
+                <ul>
+                    <li><a href="account.html">My Account</a></li>
+                    <li><a href="order-history.html">Order History</a></li>
+                    <li><a href="wishlist.html">Wishlist</a></li>
+                </ul>  
+            </div>
+        </nav>
+    
+
+        <div class="boc-white-bg boc-center">
+            <!-- Footer bar with copyright -->
+            Copyright &copy; 2020 Barry's Bargain Books
+        </div>
+
+    </footer>
+<script type="text/javascript" src="javascript/sitewide.js"></script>
+<script type="text/javascript">
+/* ----------------------------------------
+               XML manipulation code
+---------------------------------------- */
+
+/* accreditation
+following code snippet and the getXMLContent function are adapted from the XPath tutorials 
+available on W3CSchools at https://www.w3schools.com/xml/xpath_examples.asp
+*/
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        updateGenreBooks(xhttp.responseXML);
+    }
+};
+xhttp.open("GET", "books.xml", true);
+xhttp.send(); 
+
+function updateGenreBooks(xml){
+    showBookList(xml, "/bookstore/book[@category='Art & Drawing']", "/bookstore/book[@category='Art & Drawing']/descendant-or-self::*[self::title | self::urltitle | self::artwork ]", "art-books", "Books in this Genre");    
+    showBookList(xml, "/bookstore/book[@category='Children']", "/bookstore/book[@category='Children']/descendant-or-self::*[self::title | self::urltitle | self::artwork ]", "children-books", "Books in this Genre");
+    showBookList(xml, "/bookstore/book[@category='Cooking']", "/bookstore/book[@category='Cooking']/descendant-or-self::*[self::title | self::urltitle | self::artwork ]", "cooking-books", "Books in this Genre");
+    showBookList(xml, "/bookstore/book[@category='DIY']", "/bookstore/book[@category='DIY']/descendant-or-self::*[self::title | self::urltitle | self::artwork ]", "diy-books", "Books in this Genre");
+    showBookList(xml, "/bookstore/book[@category='Fantasy & Adventure']", "/bookstore/book[@category='Fantasy & Adventure']/descendant-or-self::*[self::title | self::urltitle | self::artwork ]", "fantasy-books", "Books in this Genre");
+    showBookList(xml, "/bookstore/book[@category='History']", "/bookstore/book[@category='History']/descendant-or-self::*[self::title | self::urltitle | self::artwork ]", "history-books", "Books in this Genre");
+    showBookList(xml, "/bookstore/book[@category='Horror']", "/bookstore/book[@category='Horror']/descendant-or-self::*[self::title | self::urltitle | self::artwork ]", "horror-books", "Books in this Genre");
+    showBookList(xml, "/bookstore/book[@category='Mystery, Crime & Thriller']", "/bookstore/book[@category='Mystery, Crime & Thriller']/descendant-or-self::*[self::title | self::urltitle | self::artwork ]", "mystery-books", "Books in this Genre");
+    showBookList(xml, "/bookstore/book[@category='Politics']", "/bookstore/book[@category='Politics']/descendant-or-self::*[self::title | self::urltitle | self::artwork ]", "politics-books", "Books in this Genre");
+    showBookList(xml, "/bookstore/book[@category='Psychology']", "/bookstore/book[@category='Psychology']/descendant-or-self::*[self::title | self::urltitle | self::artwork ]", "psychology-books", "Books in this Genre");
+    showBookList(xml, "/bookstore/book[@category='Relationships']", "/bookstore/book[@category='Relationships']/descendant-or-self::*[self::title | self::urltitle | self::artwork ]", "relationships-books", "Books in this Genre");
+    showBookList(xml, "/bookstore/book[@category='Romance']", "/bookstore/book[@category='Romance']/descendant-or-self::*[self::title | self::urltitle | self::artwork ]", "romance-books", "Books in this Genre");
+    showBookList(xml, "/bookstore/book[@category='Science Fiction']", "/bookstore/book[@category='Science Fiction']/descendant-or-self::*[self::title | self::urltitle | self::artwork ]", "scifi-books", "Books in this Genre");
+}
+</script>
+</body>
+</html>
